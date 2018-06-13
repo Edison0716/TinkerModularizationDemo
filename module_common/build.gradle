@@ -31,9 +31,9 @@ dependencies {
     api "com.alibaba:arouter-api:$rootProject.routerVersion"
     api "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
     api "com.android.support.constraint:constraint-layout:$rootProject.constraintLayoutVersion"
-
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     //万能工具类
-    compile 'com.blankj:utilcode:1.13.4'
+    api "com.blankj:utilcode:$rootProject.utilsCode"
 }
 repositories {
     mavenCentral()

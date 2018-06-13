@@ -53,7 +53,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':module_common')
     kapt "com.alibaba:arouter-compiler:$rootProject.annotationProcessor"
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 repositories {
     mavenCentral()

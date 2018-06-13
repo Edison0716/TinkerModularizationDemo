@@ -7,5 +7,20 @@ package com.junlong0716.module.common
  * @modified by:
  */
 object ModuleConfig {
-    val MODULESLIST = arrayOf("com.junlong0716.module.b.ModuleMainBApp", "")
+    val MODULESLIST = arrayOf("com.junlong0716.module.a.ModuleMainAApp","com.junlong0716.module.b.ModuleMainBApp")
+    fun modulesApplicationInit(app:BaseApplication) {
+        for (moduleImpl in ModuleConfig.MODULESLIST) {
+            try {
+                val clazz = Class.forName(moduleImpl)
+                val obj = clazz.newInstance()
+                (obj as? ApplicationImpl)?.onCreate(app)
+            } catch (e: ClassNotFoundException) {
+                e.printStackTrace()
+            } catch (e: IllegalAccessException) {
+                e.printStackTrace()
+            } catch (e: InstantiationException) {
+                e.printStackTrace()
+            }
+        }
+    }
 }
