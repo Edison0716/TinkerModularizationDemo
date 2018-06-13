@@ -3,12 +3,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <Button
-        android:onClick="turn"
+        android:onClick="fixBug"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="turn to MainBActivity"/>
+        android:text="hotfix by tinker" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="turn"
+        android:text="turn to MainBActivity" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="After Fix Create1"/>
 </LinearLayout>

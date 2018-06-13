@@ -1,2 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.junlong0716.module.common" />
+    package="com.junlong0716.module.common">
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="22"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+</manifest>

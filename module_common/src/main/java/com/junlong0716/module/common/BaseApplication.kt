@@ -4,6 +4,8 @@ import android.app.Application
 import com.alibaba.android.arouter.launcher.ARouter
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.Utils
+import com.tencent.tinker.loader.app.TinkerApplication
+import com.tencent.tinker.loader.shareutil.ShareConstants
 
 /**
  *@author: EdsionLi
@@ -11,7 +13,8 @@ import com.blankj.utilcode.util.Utils
  *@date: Created in 2018/6/13 上午11:26
  *@modified by:
  */
-open class BaseApplication : Application() {
+open class BaseApplication : TinkerApplication(ShareConstants.TINKER_ENABLE_ALL, "com.junlong0716.module.common.SampleApplicationLike",
+        "com.tencent.tinker.loader.TinkerLoader", false) {
 
     override fun onCreate() {
         super.onCreate()
