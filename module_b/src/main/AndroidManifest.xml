@@ -3,7 +3,9 @@
     package="com.junlong0716.module.b">
 
     <application>
-        <activity android:name=".MainBActivity"></activity>
+        <activity android:name=".MainBActivity">
+
+        </activity>
     </application>
 
 </manifest>
