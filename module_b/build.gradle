@@ -50,6 +50,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':module_common')
     kapt "com.alibaba:arouter-compiler:$rootProject.annotationProcessor"
+    api "com.didi.virtualapk:core:$rootProject.virtualAPK"
 }
 repositories {
     mavenCentral()

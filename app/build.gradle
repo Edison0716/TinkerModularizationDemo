@@ -6,6 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 
 apply plugin: 'com.tencent.tinker.patch'
 
+apply plugin: 'com.didi.virtualapk.host'
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
@@ -30,11 +32,8 @@ dependencies {
     implementation project(':module_common')
     if (!isModule.toBoolean()) {
         implementation project(':module_a')
-        implementation project(':module_b')
-    } else {
-
+        //implementation project(':module_b')
     }
-
 }
 repositories {
     mavenCentral()

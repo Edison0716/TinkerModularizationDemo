@@ -14,4 +14,6 @@ rootProject.ext {
     utilsCode="1.14.4"
     tinker = "1.9.1"
     multidex="1.0.1"
+
+    virtualAPK = "0.9.6"
 }
